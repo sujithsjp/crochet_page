@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f1e7">
+    <meta name="description" content="A collection of handmade crochet, made slowly and loved daily.">
+    <title>Crochet, every loop handmade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="photos.js" defer></script>
+    <script src="gallery.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Crochet, every loop handmade, home">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>LOOP <span class="wordmark-light">BY LOOP</span></span>
+      </a>
+      <a class="topbar-link" href="#collection">THE COLLECTION <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" alt="Handmade crochet from the photo collection" fetchpriority="high">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SOFT CRAFT · JOYFUL COLOR</p>
+          <h1 id="hero-title">Crochet,<br>every loop<br>handmade.</h1>
+          <p class="hero-note">Small details, bold color, and the quiet pleasure of yarn becoming something beautiful.</p>
+          <a class="hero-link" href="#collection">Wander through the work <span aria-hidden="true">↘</span></a>
+        </div>
+        <span class="hero-index" aria-hidden="true">01 / HANDMADE</span>
+      </section>
+
+      <section class="intro" aria-label="About the collection">
+        <p class="intro-title">Made slowly.<br><em>Loved daily.</em></p>
+        <p class="intro-copy">Each piece begins with a strand of yarn and grows loop by loop. The result is tactile, playful, and completely individual, with warmth woven into every stitch.</p>
+      </section>
+
+      <section class="collection" id="collection" aria-labelledby="collection-title">
+        <div class="collection-heading">
+          <div>
+            <p class="eyebrow collection-eyebrow">A LITTLE COLOR, A LOT OF CARE</p>
+            <h2 id="collection-title">The collection<span class="heading-period">.</span></h2>
+          </div>
+          <p class="photo-count" id="photo-count" aria-live="polite">Gathering the photos…</p>
+        </div>
+        <div class="photo-grid" id="photo-grid" aria-label="Crochet photo collection"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>MADE BY HAND, ONE LOOP AT A TIME</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+
+    <dialog class="viewer" id="viewer" aria-label="Photo viewer">
+      <button class="viewer-close" type="button" aria-label="Close photo viewer">×</button>
+      <button class="viewer-arrow viewer-previous" type="button" aria-label="Previous photo">‹</button>
+      <figure class="viewer-figure">
+        <img class="viewer-image" id="viewer-image" alt="">
+        <figcaption class="viewer-caption" id="viewer-caption"></figcaption>
+      </figure>
+      <button class="viewer-arrow viewer-next" type="button" aria-label="Next photo">›</button>
+    </dialog>
+  </body>
+</html>
